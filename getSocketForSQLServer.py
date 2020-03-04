@@ -42,7 +42,7 @@ def getSocketForServer(serverName):
     try:
         # Connect to Database using pymssql
         conn = pymssql.connect(
-            user = 'mmc\\'+username, 
+            user = username, 
             password = passw, 
             host = serverName, 
             database = 'master'
